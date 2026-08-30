@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-ink-950 text-slate-200 font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-slate-50;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-slate-50;
+  }
+
+  :focus-visible {
+    outline: 2px solid #3E7CB8;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply bg-ink-900 border border-ink-700 rounded-lg;
+  }
+
+  .status-dot {
+    @apply inline-block w-2 h-2 rounded-full;
+  }
+}
