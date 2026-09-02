@@ -1,0 +1,30 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.db
+.pytest_cache/
+.env
+
+# Node
+node_modules/
+dist/
+.env
+
+# Data (not committed — regenerated locally)
+data/uploads/*
+data/processed/*
+data/evidence/*
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/evidence/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+.venv/
